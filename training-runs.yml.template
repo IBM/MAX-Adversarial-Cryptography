@@ -1,0 +1,38 @@
+model_definition:
+  framework:
+#framework name and version (supported list of frameworks available at 'bx ml list frameworks')
+   name: tensorflow
+   version: 1.5
+#name of the training-run
+  name: adversarial_crypto
+#Author name and email
+  author:
+    name: IBM CODAIT
+    email: no-reply@us.ibm.com
+  description: Learning to Protect Communications with Adversarial Neural Cryptography
+  execution:
+#Command to execute
+    command: python3 train_eval.py
+    compute_configuration:
+#Valid values for name - k80/k80x2/k80x4/p100/p100x2/v100/v100x2/small/medium/large
+      name: k80
+training_data_reference:
+#Source connection object credentials
+  name: training-data-reference_name
+  connection:
+    endpoint_url: https://s3-api.us-geo.objectstorage.service.networklayer.com
+    access_key_id:
+    secret_access_key:
+  source:
+    bucket: adversarial-crypto-training
+  type: s3
+training_results_reference:
+#Target connection object credentials
+  name: training-results-reference_name
+  connection:
+    endpoint_url: https://s3-api.us-geo.objectstorage.service.networklayer.com
+    access_key_id:
+    secret_access_key:
+  target:
+    bucket: adversarial-crypto-training-results
+  type: s3
