@@ -1,4 +1,4 @@
-# IBM Code Model Asset Exchange: Adversarial-Crypto experiment
+# IBM Code Model Asset Exchange: </br> Adversarial-Crypto experiment
 
 This repository contains code to run the Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
 
@@ -13,7 +13,7 @@ and also tries to reconstruct the message. The main function attempts to train t
 
 * This experiment requires a provisioned instance of IBM Watson Machine Learning service.
 
-### Setup an IBM Cloud Object Storage account
+### Setup an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
 	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose Cloud Object Storage
@@ -24,7 +24,7 @@ and also tries to reconstruct the message. The main function attempts to train t
 	- Make a note of the endpoint url
 		- On the left side of the window, click on `Endpoint`
 		- Copy the relevant public or private endpoint. [I choose the us-geo private endpoint].
-- In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/)
+- In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/) which can be used to create buckets and/or add files to COS.
    - Export AWS_ACCESS_KEY_ID with your COS `access_key_id` and AWS_SECRET_ACCESS_KEY with your COS `secret_access_key`
 
 ### Setup IBM CLI & ML CLI
