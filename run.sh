@@ -1,4 +1,3 @@
-rm -rf training-runs.yml
 
 if [ ! -f ./training-runs.yml ]; then
     cp ./training-runs.yml.template ./training-runs.yml
