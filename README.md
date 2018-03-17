@@ -1,6 +1,6 @@
-# IBM Code Model Asset Exchange: </br> Adversarial-Crypto experiment
+# IBM Code Model Asset Exchange: </br> Adversarial-Crypto Experiment
 
-This repository contains code to run the Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
+This repository contains code to run an Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
 
 >Adversarial training to learn trivial encryption functions, from the paper "Learning to Protect Communications with Adversarial Neural Cryptography", Abadi & Andersen, 2016.
 
