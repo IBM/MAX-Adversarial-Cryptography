@@ -1,0 +1,8 @@
+.DS_Store
+
+# PyCharm
+.idea/
+*.iml
+
+training-runs.yml
+training-runs.yml.bak
