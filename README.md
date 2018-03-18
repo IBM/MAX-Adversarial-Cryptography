@@ -1,17 +1,16 @@
-# IBM Code Model Asset Exchange: Adversarial-Crypto
+# IBM Code Model Asset Exchange: Adversarial Cryptography Experiment
 
-This repository contains code to run an Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment perform adversarial training to learn trivial encryption functions. The experiment is based on the paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918), Abadi & Andersen, 2016.
+This repository contains code to run an Adversarial-Crypto experiment on [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment performs adversarial training to learn trivial encryption functions. The experiment is based on the 2016 paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918) by Abadi and Andersen.
 
-This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs in_m (message), in_k (key) and outputs 'ciphertext'. Bob takes inputs in_k, ciphertext and tries to reconstruct the message. Eve is an adversarial network that takes input ciphertext
-and also tries to reconstruct the message. The main function attempts to train these networks and then evaluates them, all on random plaintext and key values.
+This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs `in_m (message), in_k (key)` and outputs the ciphertext as a string. Bob takes inputs `in_k, ciphertext` and tries to reconstruct the message. Eve is an adversarial network that takes the ciphertext as its input and also tries to reconstruct the message. The main function attempts to train these networks and then evaluates them, all on random plaintext and key values.
 
 # Quickstart
 
 ## Prerequisites
 
-* This experiment requires a provisioned instance of IBM Watson Machine Learning service.
+* This experiment requires a provisioned instance of the IBM Watson Machine Learning service.
 
-### Setup an IBM Cloud Object Storage (COS) account
+### Set Up an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
 	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose Cloud Object Storage
@@ -25,14 +24,14 @@ and also tries to reconstruct the message. The main function attempts to train t
 - In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/) which can be used to create buckets and/or add files to COS.
    - Export AWS_ACCESS_KEY_ID with your COS `access_key_id` and AWS_SECRET_ACCESS_KEY with your COS `secret_access_key`
 
-### Setup IBM CLI & ML CLI
+### Set Up IBM CLI & ML CLI
 
 - Install [IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/bluemix_cli/get_started.html#getting-started)
-  - Login using `bx login` or `bx login --sso` if within IBM
+  - Log in using `bx login` or `bx login --sso` if within IBM
 - Install [ML CLI Plugin](https://dataplatform.ibm.com/docs/content/analyze-data/ml_dlaas_environment.html)
   - After install, check if there is any plugins that need update
     - `bx plugin update`
-  - Make sure to setup the various environment variables correctly:
+  - Make sure to set up the various environment variables correctly:
     - `ML_INSTANCE`, `ML_USERNAME`, `ML_PASSWORD`, `ML_ENV`
 
 
