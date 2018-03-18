@@ -1,10 +1,8 @@
-# IBM Code Model Asset Exchange: </br> Adversarial-Crypto Experiment
+# IBM Code Model Asset Exchange: Adversarial-Crypto
 
-This repository contains code to run an Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning), from the IBM Code Model Asset Exchange.
+This repository contains code to run an Adversarial-Crypto experiment on the [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment perform adversarial training to learn trivial encryption functions. The experiment is based on the paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918), Abadi & Andersen, 2016.
 
->Adversarial training to learn trivial encryption functions, from the paper "Learning to Protect Communications with Adversarial Neural Cryptography", Abadi & Andersen, 2016.
-
->This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs in_m (message), in_k (key) and outputs 'ciphertext'. Bob takes inputs in_k, ciphertext and tries to reconstruct the message. Eve is an adversarial network that takes input ciphertext
+This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs in_m (message), in_k (key) and outputs 'ciphertext'. Bob takes inputs in_k, ciphertext and tries to reconstruct the message. Eve is an adversarial network that takes input ciphertext
 and also tries to reconstruct the message. The main function attempts to train these networks and then evaluates them, all on random plaintext and key values.
 
 # Quickstart
