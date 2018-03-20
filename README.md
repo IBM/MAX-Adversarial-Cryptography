@@ -4,6 +4,8 @@ This repository contains code to run an Adversarial-Crypto experiment on [IBM Wa
 
 This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs `in_m (message), in_k (key)` and outputs the ciphertext as a string. Bob takes inputs `in_k, ciphertext` and tries to reconstruct the message. Eve is an adversarial network that takes the ciphertext as its input and also tries to reconstruct the message. The main function attempts to train these networks and then evaluates them, all on random plaintext and key values.
 
+This repository was developed as part of the [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/)
+
 # Quickstart
 
 ## Prerequisites
