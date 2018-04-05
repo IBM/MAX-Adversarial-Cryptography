@@ -45,6 +45,10 @@ The run.sh utility script will deploy the experiment to WML and execute the expe
 run.sh
 ```
 
+## Try this experiment in Fabric for Deep Learning
+
+If you want to run this experiment using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)), You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
+
 ## Licenses
 
 | Component | License | Link  |
