@@ -1,6 +1,6 @@
 # IBM Code Model Asset Exchange: Adversarial Cryptography Experiment
 
-This repository contains code to run an Adversarial-Crypto experiment on [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment performs adversarial training to learn trivial encryption functions. The experiment is based on the 2016 paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918) by Abadi and Andersen.
+This repository contains code to run an Adversarial-Crypto experiment on [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment performs adversarial training to learn trivial encryption functions. The model is based on the [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto) and the 2016 paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918) by Abadi and Andersen.
 
 This experiment creates and trains three neural networks, termed Alice, Bob, and Eve.  Alice takes inputs `in_m (message), in_k (key)` and outputs the ciphertext as a string. Bob takes inputs `in_k, ciphertext` and tries to reconstruct the message. Eve is an adversarial network that takes the ciphertext as its input and also tries to reconstruct the message. The main function attempts to train these networks and then evaluates them, all on random plaintext and key values.
 
@@ -59,4 +59,5 @@ If you want to run this experiment using Fabric for Deep Learning ([FFDL](https:
 
 ## References
 
-* Abadi & Andersen, [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918), ,2016.
+* Abadi & Andersen, [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918), arXiv, 2016.
+* [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto) 
