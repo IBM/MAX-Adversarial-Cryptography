@@ -16,15 +16,15 @@ This repository was developed as part of the [IBM Code Model Asset Exchange](htt
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
 - Create credentials for either reading and writing or just reading
 	- From the bluemix console page (https://console.bluemix.net/dashboard/apps/), choose Cloud Object Storage
-	- On the left side, click the service credentials
-	- Click on the `new credentials` button to create new credentials
-	- In the 'Add New Credentials' popup, use this parameter `{"HMAC":true} in the `Add Inline Configuration...`
+	- On the left side, click the `Service credentials`
+	- Click on the `New credentials` button to create new credentials
+	- In the `Add New Credentials` popup, use this parameter `{"HMAC":true}` in the `Add Inline Configuration...`
 	- When you create the credentials, copy the `access_key_id` and `secret_access_key` values.
 	- Make a note of the endpoint url
 		- On the left side of the window, click on `Endpoint`
 		- Copy the relevant public or private endpoint. [I choose the us-geo private endpoint].
 - In addition setup your [AWS S3 command line](https://aws.amazon.com/cli/) which can be used to create buckets and/or add files to COS.
-   - Export AWS_ACCESS_KEY_ID with your COS `access_key_id` and AWS_SECRET_ACCESS_KEY with your COS `secret_access_key`
+   - Export `AWS_ACCESS_KEY_ID` with your COS `access_key_id` and `AWS_SECRET_ACCESS_KEY` with your COS `secret_access_key`
 
 ### Set Up IBM CLI & ML CLI
 
@@ -39,7 +39,7 @@ This repository was developed as part of the [IBM Code Model Asset Exchange](htt
 
 ## Running the experiment
 
-The run.sh utility script will deploy the experiment to WML and execute the experiment as a `training-run`
+The `run.sh` utility script will deploy the experiment to WML and execute the experiment as a `training-run`
 
 ```
 run.sh
@@ -47,7 +47,7 @@ run.sh
 
 ## Try this experiment in Fabric for Deep Learning
 
-If you want to run this experiment using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)), You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
+If you want to run this experiment using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)). You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
 
 ## Licenses
 
