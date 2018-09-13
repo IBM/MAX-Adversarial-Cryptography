@@ -9,12 +9,12 @@ This repository was developed as part of the [IBM Code Model Asset Exchange](htt
 ## Model Metadata
 | Domain | Application | Industry  | Framework | Training Data | Input Data Format |
 | ------------- | --------  | -------- | --------- | --------- | -------------- |
-| Cryptography | Adversarial Neural Cryptography | Security | TensorFlow | Auto-generated | N/A |
+| Security | Cryptography | General | TensorFlow | Randomly generated text | Text |
 
 ## References
 
 * Abadi & Andersen, [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918), ,2016.
-* [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto) 
+* [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto)
 
 ## Licenses
 
