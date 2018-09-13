@@ -27,7 +27,7 @@ This repository was developed as part of the [IBM Code Model Asset Exchange](htt
 
 ## Prerequisites
 
-* This experiment requires a provisioned instance of the IBM Watson Machine Learning service.
+* This experiment requires a provisioned instance of the IBM Watson Machine Learning service. If you don't have an instance yet, go to [Watson Machine Learning in the IBM Cloud Catalog](https://console.bluemix.net/catalog/services/machine-learning) to create one.
 
 ### Set Up an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
