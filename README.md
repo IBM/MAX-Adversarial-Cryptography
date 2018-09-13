@@ -6,11 +6,28 @@ This experiment creates and trains three neural networks, termed Alice, Bob, and
 
 This repository was developed as part of the [IBM Code Model Asset Exchange](https://developer.ibm.com/code/exchanges/models/)
 
+## Model Metadata
+| Domain | Application | Industry  | Framework | Training Data | Input Data Format |
+| ------------- | --------  | -------- | --------- | --------- | -------------- |
+| Security | Cryptography | General | TensorFlow | Randomly generated text | Text |
+
+## References
+
+* Abadi & Andersen, [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918), ,2016.
+* [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto)
+
+## Licenses
+
+| Component | License | Link  |
+| ------------- | --------  | -------- |
+| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
+| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
+
 # Quickstart
 
 ## Prerequisites
 
-* This experiment requires a provisioned instance of the IBM Watson Machine Learning service.
+* This experiment requires a provisioned instance of the IBM Watson Machine Learning service. If you don't have an instance yet, go to [Watson Machine Learning in the IBM Cloud Catalog](https://console.bluemix.net/catalog/services/machine-learning) to create one.
 
 ### Set Up an IBM Cloud Object Storage (COS) account
 - Create an IBM Cloud Object Storage account if you don't have one (https://www.ibm.com/cloud/storage)
@@ -48,16 +65,3 @@ run.sh
 ## Try this experiment in Fabric for Deep Learning
 
 If you want to run this experiment using Fabric for Deep Learning ([FFDL](https://github.com/IBM/FfDL)), You can simply clone the FfDL repository and follow the instructions over [here](https://github.com/IBM/FfDL/blob/master/etc/converter/ffdl-wml.md) to convert your `training-runs.yml` into FfDL's specification.
-
-## Licenses
-
-| Component | License | Link  |
-| ------------- | --------  | -------- |
-| This repository | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [LICENSE](LICENSE) |
-| Model Code (3rd party) | [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) | [TensorFlow Models](https://github.com/tensorflow/models/blob/master/LICENSE)|
-
-
-## References
-
-* Abadi & Andersen, [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918), arXiv, 2016.
-* [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto) 
