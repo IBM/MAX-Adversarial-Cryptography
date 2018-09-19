@@ -56,10 +56,26 @@ This repository was developed as part of the [IBM Code Model Asset Exchange](htt
 
 ## Running the experiment
 
-The run.sh utility script will deploy the experiment to WML and execute the experiment as a `training-run`
+The `train.sh` utility script will prompt the user to enter the names of the buckets to be created for the training data and result weights and start training the model as a `training-run` on the Watson ML service.
 
 ```
-run.sh
+$ train.sh
+Enter a training bucket name
+
+$ adversarial-crypto-data
+upload: ./NationalNames.csv to s3://name-gen-training/data/NationalNames.csv
+
+Enter a results bucket name
+$ adversarial-crypto-results
+...
+```
+
+After training has started, it should print the training-id that is going to be necessary for steps below
+
+```
+Starting to train ...
+OK
+Model-ID is 'training-GCtN_YRig'
 ```
 
 ## Try this experiment in Fabric for Deep Learning
