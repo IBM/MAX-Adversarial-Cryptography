@@ -1,6 +1,6 @@
 model_definition:
   framework:
-#framework name and version (supported list of frameworks available at 'bx ml list frameworks')
+#framework name and version (supported list of frameworks available at 'ibmcloud ml list frameworks')
    name: tensorflow
    version: 1.5
 #name of the training-run
@@ -24,7 +24,7 @@ training_data_reference:
     access_key_id:
     secret_access_key:
   source:
-    bucket: adversarial-crypto-training
+    bucket: TRAINING_BUCKET
   type: s3
 training_results_reference:
 #Target connection object credentials
@@ -34,5 +34,5 @@ training_results_reference:
     access_key_id:
     secret_access_key:
   target:
-    bucket: adversarial-crypto-training-results
+    bucket: RESULTS_BUCKET
   type: s3
