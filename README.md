@@ -1,4 +1,4 @@
-# IBM Code Model Asset Exchange: Adversarial Cryptography Experiment
+# IBM Developer Model Asset Exchange: Adversarial Cryptography Experiment
 
 This repository contains code to run an Adversarial-Crypto experiment on [IBM Watson Machine Learning](https://www.ibm.com/cloud/machine-learning). This experiment performs adversarial training to learn trivial encryption functions. The model is based on the [TensorFlow implementation](https://github.com/tensorflow/models/tree/master/research/adversarial_crypto) and the 2016 paper ["Learning to Protect Communications with Adversarial Neural Cryptography"](https://arxiv.org/abs/1610.06918) by Abadi and Andersen.
 
